@@ -37,7 +37,7 @@ namespace M15_TP01_N02
             _ativo = ativo;
         }
 
-        public uint GetIdFuncionario() => _idFuncionario;
+        public uint GetId() => _idFuncionario;
         public string GetNome() => _nome;
         public string GetUsername() => _username;
         public string GetPassword() => _password;

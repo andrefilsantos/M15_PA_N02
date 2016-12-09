@@ -1,11 +1,4 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
-using System.Drawing;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace M15_TP01_N02
@@ -21,6 +14,18 @@ namespace M15_TP01_N02
         private void btnExit_Click(object sender, EventArgs e)
         {
             Close();
+        }
+
+        private void txtUsername_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                btnLogin_Click(this, new EventArgs());
+        }
+
+        private void txtPassword_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+                btnLogin_Click(this, new EventArgs());
         }
 
         private void btnLogin_Click(object sender, EventArgs e)

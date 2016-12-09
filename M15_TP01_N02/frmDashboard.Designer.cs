@@ -30,12 +30,14 @@
         {
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmDashboard));
             this.panel1 = new System.Windows.Forms.Panel();
+            this.panel7 = new System.Windows.Forms.Panel();
+            this.btnLogout = new System.Windows.Forms.Button();
             this.panel4 = new System.Windows.Forms.Panel();
             this.panel6 = new System.Windows.Forms.Panel();
             this.label2 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
+            this.imgProfile = new System.Windows.Forms.PictureBox();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.assitênciasToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.adicionarAssistênciaToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -61,32 +63,68 @@
             this.sobreToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.panel2 = new System.Windows.Forms.Panel();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.tabControl1 = new System.Windows.Forms.TabControl();
+            this.tabPage1 = new System.Windows.Forms.TabPage();
+            this.dataGridView1 = new System.Windows.Forms.DataGridView();
+            this.tabPage2 = new System.Windows.Forms.TabPage();
+            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.tabPage3 = new System.Windows.Forms.TabPage();
+            this.dataGridView3 = new System.Windows.Forms.DataGridView();
             this.panel1.SuspendLayout();
+            this.panel7.SuspendLayout();
             this.panel4.SuspendLayout();
             this.panel6.SuspendLayout();
             this.panel5.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgProfile)).BeginInit();
             this.menuStrip1.SuspendLayout();
+            this.panel3.SuspendLayout();
+            this.tabControl1.SuspendLayout();
+            this.tabPage1.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.tabPage2.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            this.tabPage3.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).BeginInit();
             this.SuspendLayout();
             // 
             // panel1
             // 
+            this.panel1.Controls.Add(this.panel7);
             this.panel1.Controls.Add(this.panel4);
-            this.panel1.Controls.Add(this.pictureBox1);
+            this.panel1.Controls.Add(this.imgProfile);
             this.panel1.Controls.Add(this.menuStrip1);
             this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
             this.panel1.Location = new System.Drawing.Point(0, 0);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(1000, 100);
             this.panel1.TabIndex = 0;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
+            // 
+            // panel7
+            // 
+            this.panel7.Controls.Add(this.btnLogout);
+            this.panel7.Dock = System.Windows.Forms.DockStyle.Right;
+            this.panel7.Location = new System.Drawing.Point(844, 24);
+            this.panel7.Name = "panel7";
+            this.panel7.Size = new System.Drawing.Size(156, 76);
+            this.panel7.TabIndex = 3;
+            // 
+            // btnLogout
+            // 
+            this.btnLogout.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.btnLogout.Location = new System.Drawing.Point(0, 0);
+            this.btnLogout.Name = "btnLogout";
+            this.btnLogout.Size = new System.Drawing.Size(156, 76);
+            this.btnLogout.TabIndex = 0;
+            this.btnLogout.Text = "Logout";
+            this.btnLogout.UseVisualStyleBackColor = true;
+            this.btnLogout.Click += new System.EventHandler(this.btnLogout_Click);
             // 
             // panel4
             // 
             this.panel4.Controls.Add(this.panel6);
             this.panel4.Controls.Add(this.panel5);
             this.panel4.Dock = System.Windows.Forms.DockStyle.Left;
-            this.panel4.Location = new System.Drawing.Point(84, 24);
+            this.panel4.Location = new System.Drawing.Point(76, 24);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(158, 76);
             this.panel4.TabIndex = 2;
@@ -131,16 +169,16 @@
             this.label1.TabIndex = 0;
             this.label1.Text = "Welcome,";
             // 
-            // pictureBox1
+            // imgProfile
             // 
-            this.pictureBox1.Dock = System.Windows.Forms.DockStyle.Left;
-            this.pictureBox1.Image = ((System.Drawing.Image)(resources.GetObject("pictureBox1.Image")));
-            this.pictureBox1.Location = new System.Drawing.Point(0, 24);
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.Size = new System.Drawing.Size(84, 76);
-            this.pictureBox1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.pictureBox1.TabIndex = 1;
-            this.pictureBox1.TabStop = false;
+            this.imgProfile.Dock = System.Windows.Forms.DockStyle.Left;
+            this.imgProfile.Image = ((System.Drawing.Image)(resources.GetObject("imgProfile.Image")));
+            this.imgProfile.Location = new System.Drawing.Point(0, 24);
+            this.imgProfile.Name = "imgProfile";
+            this.imgProfile.Size = new System.Drawing.Size(76, 76);
+            this.imgProfile.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.imgProfile.TabIndex = 1;
+            this.imgProfile.TabStop = false;
             // 
             // menuStrip1
             // 
@@ -171,6 +209,7 @@
             this.adicionarAssistênciaToolStripMenuItem.Name = "adicionarAssistênciaToolStripMenuItem";
             this.adicionarAssistênciaToolStripMenuItem.Size = new System.Drawing.Size(186, 22);
             this.adicionarAssistênciaToolStripMenuItem.Text = "Adicionar Assistência";
+            this.adicionarAssistênciaToolStripMenuItem.Click += new System.EventHandler(this.adicionarAssistênciaToolStripMenuItem_Click);
             // 
             // verAssistênciasToolStripMenuItem
             // 
@@ -280,6 +319,7 @@
             this.adicionarFuncionárioToolStripMenuItem.Name = "adicionarFuncionárioToolStripMenuItem";
             this.adicionarFuncionárioToolStripMenuItem.Size = new System.Drawing.Size(191, 22);
             this.adicionarFuncionárioToolStripMenuItem.Text = "Adicionar Funcionário";
+            this.adicionarFuncionárioToolStripMenuItem.Click += new System.EventHandler(this.adicionarFuncionárioToolStripMenuItem_Click);
             // 
             // verFuncionáriosToolStripMenuItem
             // 
@@ -303,6 +343,7 @@
             this.sobreToolStripMenuItem.Name = "sobreToolStripMenuItem";
             this.sobreToolStripMenuItem.Size = new System.Drawing.Size(49, 20);
             this.sobreToolStripMenuItem.Text = "Sobre";
+            this.sobreToolStripMenuItem.Click += new System.EventHandler(this.sobreToolStripMenuItem_Click);
             // 
             // panel2
             // 
@@ -314,11 +355,91 @@
             // 
             // panel3
             // 
+            this.panel3.Controls.Add(this.tabControl1);
             this.panel3.Dock = System.Windows.Forms.DockStyle.Fill;
             this.panel3.Location = new System.Drawing.Point(0, 100);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(1000, 316);
             this.panel3.TabIndex = 2;
+            // 
+            // tabControl1
+            // 
+            this.tabControl1.Controls.Add(this.tabPage1);
+            this.tabControl1.Controls.Add(this.tabPage2);
+            this.tabControl1.Controls.Add(this.tabPage3);
+            this.tabControl1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.tabControl1.Location = new System.Drawing.Point(0, 0);
+            this.tabControl1.Name = "tabControl1";
+            this.tabControl1.SelectedIndex = 0;
+            this.tabControl1.Size = new System.Drawing.Size(1000, 316);
+            this.tabControl1.TabIndex = 0;
+            // 
+            // tabPage1
+            // 
+            this.tabPage1.Controls.Add(this.dataGridView1);
+            this.tabPage1.Location = new System.Drawing.Point(4, 22);
+            this.tabPage1.Name = "tabPage1";
+            this.tabPage1.Padding = new System.Windows.Forms.Padding(3);
+            this.tabPage1.Size = new System.Drawing.Size(992, 290);
+            this.tabPage1.TabIndex = 0;
+            this.tabPage1.Text = "Hoje";
+            this.tabPage1.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView1
+            // 
+            this.dataGridView1.AllowUserToAddRows = false;
+            this.dataGridView1.AllowUserToDeleteRows = false;
+            this.dataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView1.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dataGridView1.Location = new System.Drawing.Point(3, 3);
+            this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.ReadOnly = true;
+            this.dataGridView1.Size = new System.Drawing.Size(775, 284);
+            this.dataGridView1.TabIndex = 0;
+            // 
+            // tabPage2
+            // 
+            this.tabPage2.Controls.Add(this.dataGridView2);
+            this.tabPage2.Location = new System.Drawing.Point(4, 22);
+            this.tabPage2.Name = "tabPage2";
+            this.tabPage2.Size = new System.Drawing.Size(992, 290);
+            this.tabPage2.TabIndex = 1;
+            this.tabPage2.Text = "Amanhã";
+            this.tabPage2.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView2
+            // 
+            this.dataGridView2.AllowUserToAddRows = false;
+            this.dataGridView2.AllowUserToDeleteRows = false;
+            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView2.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dataGridView2.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView2.Name = "dataGridView2";
+            this.dataGridView2.ReadOnly = true;
+            this.dataGridView2.Size = new System.Drawing.Size(713, 290);
+            this.dataGridView2.TabIndex = 0;
+            // 
+            // tabPage3
+            // 
+            this.tabPage3.Controls.Add(this.dataGridView3);
+            this.tabPage3.Location = new System.Drawing.Point(4, 22);
+            this.tabPage3.Name = "tabPage3";
+            this.tabPage3.Size = new System.Drawing.Size(992, 290);
+            this.tabPage3.TabIndex = 2;
+            this.tabPage3.Text = "Inacabadas";
+            this.tabPage3.UseVisualStyleBackColor = true;
+            // 
+            // dataGridView3
+            // 
+            this.dataGridView3.AllowUserToAddRows = false;
+            this.dataGridView3.AllowUserToDeleteRows = false;
+            this.dataGridView3.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dataGridView3.Dock = System.Windows.Forms.DockStyle.Left;
+            this.dataGridView3.Location = new System.Drawing.Point(0, 0);
+            this.dataGridView3.Name = "dataGridView3";
+            this.dataGridView3.ReadOnly = true;
+            this.dataGridView3.Size = new System.Drawing.Size(601, 290);
+            this.dataGridView3.TabIndex = 0;
             // 
             // frmDashboard
             // 
@@ -335,14 +456,23 @@
             this.Load += new System.EventHandler(this.Dashboard_Load);
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
+            this.panel7.ResumeLayout(false);
             this.panel4.ResumeLayout(false);
             this.panel6.ResumeLayout(false);
             this.panel6.PerformLayout();
             this.panel5.ResumeLayout(false);
             this.panel5.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.imgProfile)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
+            this.panel3.ResumeLayout(false);
+            this.tabControl1.ResumeLayout(false);
+            this.tabPage1.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.tabPage2.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            this.tabPage3.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dataGridView3)).EndInit();
             this.ResumeLayout(false);
 
         }
@@ -350,7 +480,7 @@
         #endregion
 
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.PictureBox pictureBox1;
+        private System.Windows.Forms.PictureBox imgProfile;
         private System.Windows.Forms.MenuStrip menuStrip1;
         private System.Windows.Forms.ToolStripMenuItem assitênciasToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem adicionarAssistênciaToolStripMenuItem;
@@ -381,5 +511,14 @@
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel5;
         private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TabControl tabControl1;
+        private System.Windows.Forms.TabPage tabPage1;
+        private System.Windows.Forms.DataGridView dataGridView1;
+        private System.Windows.Forms.TabPage tabPage2;
+        private System.Windows.Forms.TabPage tabPage3;
+        private System.Windows.Forms.Panel panel7;
+        private System.Windows.Forms.Button btnLogout;
+        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dataGridView3;
     }
 }
