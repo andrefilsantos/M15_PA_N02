@@ -1,6 +1,6 @@
 ﻿namespace M15_TP01_N02
 {
-    partial class frmAbout
+    partial class FrmAbout
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmAbout));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FrmAbout));
             this.picLogoESEN = new System.Windows.Forms.PictureBox();
             this.picLogosCP = new System.Windows.Forms.PictureBox();
             this.lblSobreAutores = new System.Windows.Forms.Label();

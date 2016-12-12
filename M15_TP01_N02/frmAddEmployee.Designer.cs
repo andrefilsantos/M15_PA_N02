@@ -1,6 +1,6 @@
 ﻿namespace M15_TP01_N02
 {
-    partial class frmAddEmployee
+    partial class FrmAddEmployee
     {
         /// <summary>
         /// Required designer variable.

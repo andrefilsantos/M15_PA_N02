@@ -3,9 +3,9 @@ using System.Windows.Forms;
 
 namespace M15_TP01_N02
 {
-    public partial class frmAbout : Form
+    public partial class FrmAbout : Form
     {
-        public frmAbout()
+        public FrmAbout()
         {
             InitializeComponent();
         }

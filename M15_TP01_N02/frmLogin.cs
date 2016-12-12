@@ -3,12 +3,14 @@ using System.Windows.Forms;
 
 namespace M15_TP01_N02
 {
-    public partial class frmLogin : Form
+    public partial class FrmLogin : Form
     {
         private string _username, _password;
-        public frmLogin()
+        public FrmLogin()
         {
             InitializeComponent();
+            txtUsername.Text = "admin";
+            txtPassword.Text = "admin";
         }
 
         private void btnExit_Click(object sender, EventArgs e)
@@ -41,7 +43,7 @@ namespace M15_TP01_N02
                 if (Database.Instance.Login(_username, _password))
                 {
                     Hide();
-                    var frmDashboard = new frmDashboard();
+                    var frmDashboard = new FrmDashboard();
                     frmDashboard.Show();
                 }
                 else

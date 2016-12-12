@@ -16,7 +16,7 @@ namespace M15_TP01_N02
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new frmLogin());
+            Application.Run(new FrmLogin());
         }
     }
 }

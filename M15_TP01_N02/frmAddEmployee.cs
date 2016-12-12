@@ -4,9 +4,9 @@ using System.Windows.Forms;
 
 namespace M15_TP01_N02
 {
-    public partial class frmAddEmployee : Form
+    public partial class FrmAddEmployee : Form
     {
-        public frmAddEmployee()
+        public FrmAddEmployee()
         {
             InitializeComponent();
         }
