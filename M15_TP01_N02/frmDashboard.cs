@@ -17,6 +17,8 @@ namespace M15_TP01_N02
             label2.Text = Util.Instance.User.GetNome();
             imgProfile.Image = File.Exists("../../images/Funcionarios/" + Util.Instance.User.GetIdFuncionario() + ".png") ? Image.FromFile("../../images/Funcionarios/" + Util.Instance.User.GetIdFuncionario() + ".png") : Image.FromFile("../../images/default.png");
             dataGridView1.DataSource = Database.Instance.SqlQuery($@"SELECT * FROM Assistencias WHERE idFuncionario={Util.Instance.User.GetIdFuncionario()} AND dataInicio = getDate()");
+            var data = Database.Instance.SqlQuery("SELECT * FROM Assistencias WHERE dataInicio LIKE '%" + DateTime.Now.ToString("yyyy-MM-dd") + "'");
+            dataGridView1.DataSource = data;
         }
 
         private void sobreToolStripMenuItem_Click(object sender, EventArgs e)
@@ -43,6 +45,24 @@ namespace M15_TP01_N02
             Hide();
             var frmLogin = new FrmLogin();
             frmLogin.Show();
+        }
+
+        private void adicionarMáquinasToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmAddMachine = new FrmAddMachine();
+            frmAddMachine.Show();
+        }
+
+        private void adicionarClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var frmAddClient = new FrmAddClient();
+            frmAddClient.Show();
+        }
+
+        private void verClientesToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            var clientList = new ClientsList();
+            clientList.Show();
         }
     }
 }

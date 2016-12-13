@@ -21,3 +21,7 @@ C:\Users\andre\OneDrive\Documentos\Visual Studio 2017\Projects\M15_PA_N02\M15_TP
 C:\Users\andre\OneDrive\Documentos\Visual Studio 2017\Projects\M15_PA_N02\M15_TP01_N02\obj\Debug\M15_TP01_N02.frmAbout.resources
 C:\Users\andre\OneDrive\Documentos\Visual Studio 2017\Projects\M15_PA_N02\M15_TP01_N02\obj\Debug\M15_TP01_N02.frmAddAssistance.resources
 C:\Users\andre\OneDrive\Documentos\Visual Studio 2017\Projects\M15_PA_N02\M15_TP01_N02\obj\Debug\M15_TP01_N02.frmAddEmployee.resources
+C:\Users\andre\OneDrive\Documentos\Visual Studio 2017\Projects\M15_PA_N02\M15_TP01_N02\obj\Debug\M15_TP01_N02.FrmList.resources
+C:\Users\andre\OneDrive\Documentos\Visual Studio 2017\Projects\M15_PA_N02\M15_TP01_N02\obj\Debug\M15_TP01_N02.FrmAddMachine.resources
+C:\Users\andre\OneDrive\Documentos\Visual Studio 2017\Projects\M15_PA_N02\M15_TP01_N02\obj\Debug\M15_TP01_N02.FrmAddClient.resources
+C:\Users\andre\OneDrive\Documentos\Visual Studio 2017\Projects\M15_PA_N02\M15_TP01_N02\obj\Debug\M15_TP01_N02.ClientsList.resources

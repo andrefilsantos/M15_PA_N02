@@ -246,12 +246,14 @@
             this.adicionarClientesToolStripMenuItem.Name = "adicionarClientesToolStripMenuItem";
             this.adicionarClientesToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.adicionarClientesToolStripMenuItem.Text = "Adicionar Cliente";
+            this.adicionarClientesToolStripMenuItem.Click += new System.EventHandler(this.adicionarClientesToolStripMenuItem_Click);
             // 
             // verClientesToolStripMenuItem
             // 
             this.verClientesToolStripMenuItem.Name = "verClientesToolStripMenuItem";
             this.verClientesToolStripMenuItem.Size = new System.Drawing.Size(165, 22);
             this.verClientesToolStripMenuItem.Text = "Ver Clientes";
+            this.verClientesToolStripMenuItem.Click += new System.EventHandler(this.verClientesToolStripMenuItem_Click);
             // 
             // toolStripSeparator3
             // 
@@ -285,6 +287,7 @@
             this.adicionarMáquinasToolStripMenuItem.Name = "adicionarMáquinasToolStripMenuItem";
             this.adicionarMáquinasToolStripMenuItem.Size = new System.Drawing.Size(180, 22);
             this.adicionarMáquinasToolStripMenuItem.Text = "Adicionar Máquinas";
+            this.adicionarMáquinasToolStripMenuItem.Click += new System.EventHandler(this.adicionarMáquinasToolStripMenuItem_Click);
             // 
             // verMáquinasToolStripMenuItem
             // 
@@ -441,7 +444,7 @@
             this.dataGridView3.Size = new System.Drawing.Size(601, 290);
             this.dataGridView3.TabIndex = 0;
             // 
-            // frmDashboard
+            // FrmDashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -450,7 +453,7 @@
             this.Controls.Add(this.panel2);
             this.Controls.Add(this.panel1);
             this.MainMenuStrip = this.menuStrip1;
-            this.Name = "frmDashboard";
+            this.Name = "FrmDashboard";
             this.Text = "Now Assist | Dashboard";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.Load += new System.EventHandler(this.Dashboard_Load);

@@ -145,21 +145,21 @@
             this.txtCP.Mask = "0000-000";
             this.txtCP.Name = "txtCP";
             this.txtCP.Size = new System.Drawing.Size(213, 20);
-            this.txtCP.TabIndex = 5;
+            this.txtCP.TabIndex = 10;
             // 
             // txtCity
             // 
             this.txtCity.Location = new System.Drawing.Point(129, 46);
             this.txtCity.Name = "txtCity";
             this.txtCity.Size = new System.Drawing.Size(213, 20);
-            this.txtCity.TabIndex = 4;
+            this.txtCity.TabIndex = 9;
             // 
             // txtStreet
             // 
             this.txtStreet.Location = new System.Drawing.Point(129, 20);
             this.txtStreet.Name = "txtStreet";
             this.txtStreet.Size = new System.Drawing.Size(213, 20);
-            this.txtStreet.TabIndex = 3;
+            this.txtStreet.TabIndex = 8;
             // 
             // label12
             // 
@@ -193,14 +193,14 @@
             this.txtName.Location = new System.Drawing.Point(151, 23);
             this.txtName.Name = "txtName";
             this.txtName.Size = new System.Drawing.Size(213, 20);
-            this.txtName.TabIndex = 10;
+            this.txtName.TabIndex = 1;
             // 
             // txtUsername
             // 
             this.txtUsername.Location = new System.Drawing.Point(151, 49);
             this.txtUsername.Name = "txtUsername";
             this.txtUsername.Size = new System.Drawing.Size(213, 20);
-            this.txtUsername.TabIndex = 11;
+            this.txtUsername.TabIndex = 2;
             this.txtUsername.MouseHover += new System.EventHandler(this.txtUsername_MouseHover);
             // 
             // txtPassword
@@ -208,7 +208,7 @@
             this.txtPassword.Location = new System.Drawing.Point(151, 75);
             this.txtPassword.Name = "txtPassword";
             this.txtPassword.Size = new System.Drawing.Size(213, 20);
-            this.txtPassword.TabIndex = 12;
+            this.txtPassword.TabIndex = 3;
             this.txtPassword.MouseHover += new System.EventHandler(this.txtPassword_MouseHover);
             // 
             // txtNCC
@@ -216,14 +216,14 @@
             this.txtNCC.Location = new System.Drawing.Point(151, 127);
             this.txtNCC.Name = "txtNCC";
             this.txtNCC.Size = new System.Drawing.Size(213, 20);
-            this.txtNCC.TabIndex = 14;
+            this.txtNCC.TabIndex = 5;
             // 
             // txtPhone
             // 
             this.txtPhone.Location = new System.Drawing.Point(151, 153);
             this.txtPhone.Name = "txtPhone";
             this.txtPhone.Size = new System.Drawing.Size(213, 20);
-            this.txtPhone.TabIndex = 15;
+            this.txtPhone.TabIndex = 6;
             // 
             // txtObservations
             // 
@@ -231,14 +231,14 @@
             this.txtObservations.Multiline = true;
             this.txtObservations.Name = "txtObservations";
             this.txtObservations.Size = new System.Drawing.Size(213, 49);
-            this.txtObservations.TabIndex = 16;
+            this.txtObservations.TabIndex = 11;
             // 
             // btnChoosePhoto
             // 
             this.btnChoosePhoto.Location = new System.Drawing.Point(382, 340);
             this.btnChoosePhoto.Name = "btnChoosePhoto";
             this.btnChoosePhoto.Size = new System.Drawing.Size(311, 23);
-            this.btnChoosePhoto.TabIndex = 18;
+            this.btnChoosePhoto.TabIndex = 12;
             this.btnChoosePhoto.Text = "&Escolher Foto";
             this.btnChoosePhoto.UseVisualStyleBackColor = true;
             this.btnChoosePhoto.Click += new System.EventHandler(this.button1_Click);
@@ -248,7 +248,7 @@
             this.btnOk.Location = new System.Drawing.Point(537, 378);
             this.btnOk.Name = "btnOk";
             this.btnOk.Size = new System.Drawing.Size(75, 34);
-            this.btnOk.TabIndex = 19;
+            this.btnOk.TabIndex = 13;
             this.btnOk.Text = "&OK";
             this.btnOk.UseVisualStyleBackColor = true;
             this.btnOk.Click += new System.EventHandler(this.btnOk_Click);
@@ -258,7 +258,7 @@
             this.btnCancel.Location = new System.Drawing.Point(618, 378);
             this.btnCancel.Name = "btnCancel";
             this.btnCancel.Size = new System.Drawing.Size(75, 34);
-            this.btnCancel.TabIndex = 20;
+            this.btnCancel.TabIndex = 14;
             this.btnCancel.Text = "&Cancelar";
             this.btnCancel.UseVisualStyleBackColor = true;
             this.btnCancel.Click += new System.EventHandler(this.btnCancel_Click);
@@ -268,7 +268,7 @@
             this.txtMail.Location = new System.Drawing.Point(151, 179);
             this.txtMail.Name = "txtMail";
             this.txtMail.Size = new System.Drawing.Size(213, 20);
-            this.txtMail.TabIndex = 22;
+            this.txtMail.TabIndex = 7;
             // 
             // label5
             // 
@@ -285,7 +285,7 @@
             this.txtBirthday.Mask = "00/00/0000";
             this.txtBirthday.Name = "txtBirthday";
             this.txtBirthday.Size = new System.Drawing.Size(213, 20);
-            this.txtBirthday.TabIndex = 23;
+            this.txtBirthday.TabIndex = 4;
             // 
             // imgProfilePhoto
             // 
@@ -301,7 +301,7 @@
             this.toolTip1.Tag = "Dados para acesso à plataforma";
             this.toolTip1.ToolTipIcon = System.Windows.Forms.ToolTipIcon.Info;
             // 
-            // frmAdd
+            // FrmAddEmployee
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -330,7 +330,7 @@
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
             this.MaximizeBox = false;
             this.MinimizeBox = false;
-            this.Name = "frmAdd";
+            this.Name = "FrmAddEmployee";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Adicionar Funcionário";
             this.groupBox1.ResumeLayout(false);

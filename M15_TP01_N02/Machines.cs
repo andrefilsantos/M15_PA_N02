@@ -9,7 +9,7 @@ namespace M15_TP01_N02
     public class Machines
     {
         private readonly uint _idMaquina;
-        private readonly string _idCliente;
+        private readonly uint _idCliente;
         private readonly string _descricao;
         private readonly string _ip;
         private readonly string _loginAcesso;
@@ -18,7 +18,7 @@ namespace M15_TP01_N02
         private readonly DateTime _ultimoUpdate;
         private readonly bool _ativo;
 
-        public Machines(uint idMaquina, string idCliente, string descricao, string ip, string loginAcesso, string passwordAcesso, DateTime dataCriacao, DateTime ultimoUpdate, bool ativo)
+        public Machines(uint idMaquina, uint idCliente, string descricao, string ip, string loginAcesso, string passwordAcesso, DateTime dataCriacao, DateTime ultimoUpdate, bool ativo)
         {
             _idMaquina = idMaquina;
             _idCliente = idCliente;
@@ -32,7 +32,7 @@ namespace M15_TP01_N02
         }
 
         public uint GetIdMaquina() => _idMaquina;
-        public string GetIdCliente() => _idCliente;
+        public uint GetIdCliente() => _idCliente;
         public string GetDescricao() => _descricao;
         public string GetIp() => _ip;
         public string GetLoginAcesso() => _loginAcesso;
@@ -40,5 +40,10 @@ namespace M15_TP01_N02
         public DateTime GetDataCriacao() => _dataCriacao;
         public DateTime GetUltimoUpdate() => _ultimoUpdate;
         public bool GetAtivo() => _ativo;
+
+        public override string ToString()
+        {
+            return _descricao;
+        }
     }
 }

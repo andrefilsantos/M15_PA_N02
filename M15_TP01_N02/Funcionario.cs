@@ -48,5 +48,10 @@ namespace M15_TP01_N02
         public DateTime GetDataCriacao() => _dataCriacao;
         public DateTime GetUltimoUpdate() => _ultimoUpdate;
         public bool GetAtivo() => _ativo;
+
+        public override string ToString()
+        {
+            return _nome;
+        }
     }
 }
